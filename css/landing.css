@@ -23,9 +23,14 @@
     border-radius: 8px;
     color: white;
     background-color:#013220;
+    border: 1px solid white;
     height: 40px;
     font-size: 1.3rem;
     width: 120px;
+}
+
+.one{
+    margin-left: 50px;
 }
 
 /*problems*/
@@ -39,6 +44,7 @@
 .solution{
     background-color: #013220;
     color: white;
+    padding: 30px 40px;
 }
 
 /* features section */
@@ -78,4 +84,17 @@
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transition);
+}
+
+
+/*footer*/
+
+.footer{
+    background-color: #013220;
+    color: white;
+}
+
+.icons{
+    
+    margin: 0px 3px;
 }
