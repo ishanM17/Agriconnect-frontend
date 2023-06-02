@@ -9,14 +9,14 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #013220;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .form-signin {
   max-width: 400px;
   padding: 60px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .form-signin .form-floating:focus-within {
@@ -24,34 +24,35 @@ body {
 }
 
 
-.inp
-{
-    margin-bottom: 8px;
-    border : 2px black solid;
-    border-radius: 8px;
+.inp {
+  border: 2px black solid;
+  border-radius: 8px;
 }
 
-.butn{
-    border: none;
-    border-radius: 8px;
-    color: white;
-    background-color:#013220;
-    height: 40px;
-    font-size: 1.3rem;
-    width: 300px;
+.inp-div {
+  margin-bottom: 8px;
 }
 
-.butn:hover{
-    color: #013220;
-    background-color: white;
+.butn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #013220;
+  height: 40px;
+  font-size: 1.3rem;
+  width: 300px;
+}
+
+.butn:hover {
+  color: #013220;
+  background-color: white;
 }
 
 
-span
-{
+span {
   color: red;
 }
 
-a{
+a {
   color: #013220;
 }

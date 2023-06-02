@@ -47,6 +47,7 @@ btn.addEventListener("click", async function (e) {
 
 
     if (valid) {
+        btn.disabled = true;
         let newUser = {
             "name": fName,
             "email": email,
