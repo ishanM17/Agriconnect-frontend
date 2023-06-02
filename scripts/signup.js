@@ -5,10 +5,10 @@ btn.addEventListener("click", async function (e) {
 
     let valid = true;
     let fName = document.querySelector("input[name=fName]").value;
-    let lName = document.querySelector("input[name=lName]").value;
     let email = document.querySelector("input[name=email]").value;
     let password = document.querySelector("input[name=password]").value;
     let confirmPassword = document.querySelector("input[name=confirmPassword]").value;
+    let role = document.getElementById("role").value;
 
     document.getElementById("f_error").innerHTML = "";
     document.getElementById("e_error").innerHTML = "";
@@ -33,7 +33,7 @@ btn.addEventListener("click", async function (e) {
 
 
     if (password.length < 6) {
-        document.getElementById("pass_error").innerHTML = "Password should be more than 6 characters"
+        document.getElementById("pass_error").innerHTML = "Enter more than 6 characters";
         valid = false;
     }
 
@@ -51,6 +51,7 @@ btn.addEventListener("click", async function (e) {
             "name": fName,
             "email": email,
             "password": password,
+            "role": role
         };
 
         fetch('http://localhost:3000/user/register', {
@@ -63,9 +64,15 @@ btn.addEventListener("click", async function (e) {
             .then((response) => response.json())
             .then((json) => {
                 console.log(json);
-                if (json.message === 'Signup successful') {
+                if (json.message === 'Success') {
+                    let jwtToken = json.data.user.token;
+                    sessionStorage.setItem("jwtToken", jwtToken);
                     sessionStorage.setItem('userEmail', email);
-                    location.href = './main.html';
+                    sessionStorage.setItem("role", role);
+                    location.href = './dashboard.html';
+                } else if(json.status === 'User already exists') {
+                    alert("user already exists");
+                    location.href = './login.html';
                 }
             });
 

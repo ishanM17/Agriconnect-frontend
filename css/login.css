@@ -20,16 +20,13 @@ body {
   }
   
 
-.inp-div
+.inp
 {
     margin-bottom: 8px;
     border : 2px black solid;
     border-radius: 8px;
 }
 
-.inp-div{
-    padding: 0px;
-}
   
 .butn{
     border: none;
