@@ -1,0 +1,52 @@
+.container_header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 70vb;
+    background-color: #013220;
+    color: white;
+}
+
+.header_left
+{
+    padding-left: 5%;
+}
+.header_left p {
+    margin: 1rem 0 2.4rem;
+
+}
+
+.butn{
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color:#013220;
+    height: 40px;
+    font-size: 1.3rem;
+    width: 120px;
+}
+
+
+/* features section */
+
+.feature
+{
+    background-color:#013220 ;
+}
+
+.feature h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.feature_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.feature_left p{
+    margin: 1rem 0 ;
+}

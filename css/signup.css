@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #013220;
+  height: 100vh; 
+}
+
+.form-signin {
+  max-width: 400px;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255,0.5);
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+
+.inp-div
+{
+    margin-bottom: 8px;
+    border : 2px black solid;
+    border-radius: 8px;
+}
+
+.inp-div{
+    padding: 0px;
+}
+
+.butn{
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color:#013220;
+    height: 40px;
+    font-size: 1.3rem;
+    width: 300px;
+}
+
+.butn:hover{
+    color: #013220;
+    background-color: white;
+}
+
+
+span
+{
+  color: red;
+}
