@@ -28,12 +28,26 @@
     width: 120px;
 }
 
+/*problems*/
+
+.problem{
+    color: #013220;
+}
+
+/*Solutions*/
+
+.solution{
+    background-color: #013220;
+    color: white;
+}
 
 /* features section */
 
 .feature
 {
-    background-color:#013220 ;
+    margin-top: 20px;
+    background-color:white;
+    color:#013220;
 }
 
 .feature h1{
@@ -48,5 +62,20 @@
 }
 
 .feature_left p{
-    margin: 1rem 0 ;
+    margin: 1rem 0 3rem;
+}
+
+.feature_right{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.2rem;
+}
+
+.feature-div
+{
+    background-color: #013220;
+    color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
 }
