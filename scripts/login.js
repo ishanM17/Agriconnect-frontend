@@ -37,6 +37,7 @@ function login() {
           let jwtToken = json.data.user.token;
           sessionStorage.setItem("jwtToken", jwtToken);
           sessionStorage.setItem('userEmail', email);
+          sessionStorage.setItem("role", role);
           location.href = './dashboard.html';
         } else {
           alert('Invalid Credentials');
