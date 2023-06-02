@@ -7,15 +7,29 @@
     height: 70vb;
     background-color: #013220;
     color: white;
+    padding: 0 10%;
 }
 
-.header_left
-{
-    padding-left: 5%;
+.header_left h3{
+    margin-top: 10px;
+    font-weight: 200;
+    font-style: italic;
 }
+
 .header_left p {
     margin: 1rem 0 2.4rem;
 
+}
+
+.butn:hover {
+    color: #013220;
+    background-color: white;
+    border-color: #013220;
+  }
+
+.header_right{
+    text-align: center;
+    /* border: 1px solid red; */
 }
 
 .butn{
@@ -35,8 +49,17 @@
 
 /*problems*/
 
+#about{
+    margin: 7% 0;
+}
+
 .problem{
     color: #013220;
+}
+
+li{
+    font-size: 1.2rem;
+    margin-bottom: 7px;
 }
 
 /*Solutions*/
@@ -44,14 +67,14 @@
 .solution{
     background-color: #013220;
     color: white;
-    padding: 30px 40px;
+    padding: 5% 10%;
 }
 
 /* features section */
 
 .feature
 {
-    margin-top: 20px;
+    margin: 7% 0;
     background-color:white;
     color:#013220;
 }
