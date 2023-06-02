@@ -7,15 +7,29 @@
     height: 70vb;
     background-color: #013220;
     color: white;
+    padding: 0 10%;
 }
 
-.header_left
-{
-    padding-left: 5%;
+.header_left h3{
+    margin-top: 10px;
+    font-weight: 200;
+    font-style: italic;
 }
+
 .header_left p {
     margin: 1rem 0 2.4rem;
 
+}
+
+.butn:hover {
+    color: #013220;
+    background-color: white;
+    border-color: #013220;
+  }
+
+.header_right{
+    text-align: center;
+    /* border: 1px solid red; */
 }
 
 .butn{
@@ -23,17 +37,46 @@
     border-radius: 8px;
     color: white;
     background-color:#013220;
+    border: 1px solid white;
     height: 40px;
     font-size: 1.3rem;
     width: 120px;
 }
 
+.one{
+    margin-left: 50px;
+}
+
+/*problems*/
+
+#about{
+    margin: 7% 0;
+}
+
+.problem{
+    color: #013220;
+}
+
+li{
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+/*Solutions*/
+
+.solution{
+    background-color: #013220;
+    color: white;
+    padding: 5% 10%;
+}
 
 /* features section */
 
 .feature
 {
-    background-color:#013220 ;
+    margin: 7% 0;
+    background-color:white;
+    color:#013220;
 }
 
 .feature h1{
@@ -48,5 +91,33 @@
 }
 
 .feature_left p{
-    margin: 1rem 0 ;
+    margin: 1rem 0 3rem;
+}
+
+.feature_right{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.2rem;
+}
+
+.feature-div
+{
+    background-color: #013220;
+    color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+
+/*footer*/
+
+.footer{
+    background-color: #013220;
+    color: white;
+}
+
+.icons{
+    
+    margin: 0px 3px;
 }
