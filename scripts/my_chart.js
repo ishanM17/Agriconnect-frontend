@@ -2,6 +2,24 @@ const ctx = document.getElementById("myChart");
 const renting = document.getElementById("Revenue_renting");
 const produce = document.getElementById("Total_Produce");
 
+function updateChart() {
+  async function fetchData() {
+    const url = "";
+    const response = await fetch(url);
+    const datapoints = await response.json();
+    console.log(datapoints);
+    return datapoints;
+  }
+
+  fetchData().then((datapoints) => {
+    const produce = datapoints.map((index) => {
+      return index.quantity;
+    });
+
+    myChart.data.datasets[0].data=produce;
+  });
+}
+
 var myChart = new Chart(produce, {
   type: "line",
   data: {
