@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=IBM+Plex+Mono:ital,wght@0,500;1,400&family=Mogra&family=Poppins:wght@200&family=Roboto+Serif:opsz,wght@8..144,300&family=Roboto:wght@100;500;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -220,6 +224,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    font-family: Roboto Serif;
 }
 
 .amount{
@@ -234,8 +239,8 @@ img {
 
 .amount--value{
     font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+    font-family: Roboto Serif;
+    font-weight: 600px;
 }
 
 .icon{
@@ -250,10 +255,12 @@ img {
 }
 
 .card-detail{
-    font-size: 18px;
-    color: #777777;
+    font-size: 30px;
+    margin-left:51px;
+    /* color: #777777; */
     letter-spacing: 2px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Roboto Serif;
+
 }
 
 
