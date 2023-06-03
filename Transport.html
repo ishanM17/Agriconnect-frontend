@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Transport.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Transport</title>
     <!-- <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/node_modules/fort-awesome/fontawesome-free/css/all.css"> -->
 </head>
+
 <body>
 
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#"><img src="images/color_logo.png" alt="" srcset="" style="width : 120px"></a></div>
+            <div class="logo"><a href="#"><img src="images/color_logo.png" alt="" srcset="" style="width : 120px"></a>
+            </div>
             <ul class="links">
                 <li><a href="hero" class="link">Home</a></li>
                 <li><a href="hero" class="link">Account</a></li>
@@ -39,129 +44,120 @@
 
             </div>
         </div>
-     </header>
+    </header>
 
-        <div class="card--container">
-            <div class="card--wrapper">
-                <div class="payment--card light-green">
-                    <div class="card--header">
-                        <div class="amount ">
-                            
-                            <span class="amount--value">
-                                Total Produce
-                            </span>
-                        </div>
-                        <i class="fa-solid fa-leaf fa-beat-fade icon" ></i>
+    <div class="card--container">
+        <div class="card--wrapper">
+            <div class="payment--card light-green">
+                <div class="card--header">
+                    <div class="amount ">
+
+                        <span class="amount--value">
+                            Total Deliveries
+                        </span>
                     </div>
-                    <b><span class="card-detail">85Kgs</span></b>
+                    <i class="fa-solid fa-leaf fa-beat-fade icon"></i>
+                </div>
+                <b><span class="card-detail">15</span></b>
 
+            </div>
+
+
+            <div class="payment--card light-green">
+                <div class="card--header">
+                    <div class="amount ">
+
+                        <span class="amount--value">
+                            Total Revenue
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-money-bill fa-beat-fade icon"></i>
+                </div>
+                <b><span class="card-detail">50 Lakhs</span></b>
+
+            </div>
+
+            <div class="payment--card light-green">
+                <div class="card--header">
+                    <div class="amount ">
+
+                        <span class="amount--value">
+                            Total Quantity Transported
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-car fa-beat-fade icon"></i>
+                </div>
+                <b><span class="card-detail">1 Lakh</span></b>
+
+            </div>
+
+
+
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="Total_Produce"></canvas>
                 </div>
 
-
-                <div class="payment--card light-green">
-                    <div class="card--header">
-                        <div class="amount ">
-                            
-                            <span class="amount--value">
-                                Total Revenue for sale
-                            </span>
-                        </div>
-                        <i class="fa-solid fa-money-bill fa-beat-fade icon"></i>
-                    </div>
-                    <b><span class="card-detail">50 Lakhs</span></b>
-
-                </div>
-
-                <div class="payment--card light-green">
-                    <div class="card--header">
-                        <div class="amount ">
-                            
-                            <span class="amount--value">
-                                Total Revenue from renting 
-                            </span>
-                        </div>
-                        <i class="fa-solid fa-car fa-beat-fade icon"></i>
-                    </div>
-                    <b><span class="card-detail">1 Lakh</span></b>
-
-                </div>
+            </div>
 
 
 
-                <div class="graphBox"> 
-                    <div class="box">
-                        <canvas id="Total_Produce"></canvas>
-                    </div>
-                    
-                </div>
 
+
+            <h2>Marketplace</h2>
+
+            <table class="table">
+                <tr class="table-heading">
+                    <th>Name</th>
+                    <th>Crop type</th>
+                    <th>Date</th>
+                    <th>Quantity</th>
+                    <th>Location</th>
+                    <th>price</th>
+                    <th>Accept</th>
+                </tr>
+                <tbody id="mytable">
+
+                </tbody>
                 
-                
-            
-
-                <h2>Lend your resources</h2>             
-
-                    <table style="border:3px solid black ; width:100% ; margin: 1rem auto; padding: 2rem 2rem;text-align: center;" >
-                        <tr style="margin: 2rem 2rem; padding: 2rem 2rem;border: 2px solid;">
-                            <th>Username</th>
-                            <th>Equipment</th>
-                            <th>Date</th>
-                            <th>Duration</th>
-                            <th>Location</th>
-                            <th>Budget</th>
-                            <th> Acceptance</th>                       
-                            
-                        </tr>
-
-                        <tr>
-                            <td>Mohan</td>
-                            <td>MohanTractor</td>
-                            <td>12/10/23</td>
-                            <td>1hours</td>
-                            <td>Pune</td>
-                            <td>400</td>
-                            <td><a href="">Accept</a> </td>
-                        </tr>
-                        
+            </table>
 
 
-                    </table>
 
-                
-                
 
-                <!-- <div class="charts">
+            <!-- <div class="charts">
                     <div class="charts-card light-green " >
                         <h2 class="chart-title">Purchase and sales</h2>
                         <div id="area-chart"></div>
                     </div>
                 </div> -->
-                
 
-            </div>
+
         </div>
     </div>
+    </div>
 
-    
+
 
     <script>
-        const toggleBtn=document.querySelector('.toggle_btn')
-        const toggleBtnIcon=document.querySelector('.toggle_btn i')
-        const dropDownMenu=document.querySelector('.dropdown_menu')
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-        toggleBtn.onclick=()=>{
+        toggleBtn.onclick = () => {
             dropDownMenu.classList.toggle('open')
             const isOpen = dropDownMenu.classList.contains('open')
 
-            toggleBtnIcon.classList=isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
-<script src="scripts/Transport.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="scripts/Transport.js"></script>
 </body>
+
 </html>

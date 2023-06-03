@@ -25,7 +25,6 @@ btn.addEventListener("click", async function (e) {
       "password": password
     };
 
-    console.log(currentUser);
     fetch('http://localhost:3000/user/login', {
       method: 'POST',
       body: JSON.stringify(currentUser),
@@ -38,11 +37,20 @@ btn.addEventListener("click", async function (e) {
         console.log(json);
         if (json.message === 'Success') {
           let jwtToken = json.data.user.token;
+          let userId = json.data.user._id;
           let role = json.data.user.role;
           sessionStorage.setItem("jwtToken", jwtToken);
-          sessionStorage.setItem('userEmail', email);
+          sessionStorage.setItem("userId", userId);
           sessionStorage.setItem("role", role);
-          location.href = './dashboard.html';
+
+          if (role === 'Farmer') {
+            location.href = './farmer.html';
+          } else if (role === 'Industry Buyer') {
+            location.href = './buyer.html';
+          } else if (role === 'Transport Facilitator') {
+            location.href = './Transport.html';
+          }
+
         } else {
           alert('Invalid Credentials');
           btn.disabled = false;
