@@ -3,10 +3,9 @@ btn.addEventListener("click", async function (e) {
   var valid = true;
   const crop = document.getElementById("crops").value;
   const quantity = document.getElementById("quantity").value;
-  const address = document.getElementById("location").value;
+  const farmer_address = document.getElementById("location").value;
   const price = document.getElementById("price").value;
   const doh = document.getElementById("doh").value;
-  console.log("value: " + quantity);
 
   if (crop === "not") {
     document.getElementById("crop_err").innerHTML = "Select option";
@@ -18,7 +17,7 @@ btn.addEventListener("click", async function (e) {
     valid = false;
   }
 
-  if (address === "") {
+  if (farmer_address === "") {
     document.getElementById("loc_err").innerHTML = "Enter your address";
     valid = false;
   }
@@ -33,16 +32,16 @@ btn.addEventListener("click", async function (e) {
     valid = false;
   }
 
-  if(valid){
+  if (valid) {
     let newPost = {
       "crop": crop,
       "quantity": quantity,
-      "farmer_address": address,
+      "farmer_address": farmer_address,
       "price": price,
       "date_of_harvest": doh
     }
-  
-    fetch('http://localhost:3000/rent/createPost', {
+
+    fetch('http://localhost:3000/sale/createPost', {
       method: 'POST',
       body: JSON.stringify(newPost),
       headers: {
@@ -53,6 +52,7 @@ btn.addEventListener("click", async function (e) {
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
+        location.href='./farmer.html'
       });
   }
 });
