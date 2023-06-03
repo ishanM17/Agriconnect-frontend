@@ -23,7 +23,7 @@ var myChart = new Chart(produce, {
 var myChart = new Chart(ctx, {
   type: "doughnut",
   data: {
-    labels: ["Wheat", "Paddy", "Rice"],
+    labels: ["Wheat", "Qunatity "],
     datasets: [
       {
         label: "# of Votes",
