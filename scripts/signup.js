@@ -69,10 +69,17 @@ btn.addEventListener("click", async function (e) {
                     let jwtToken = json.data.user.token;
                     let userId = json.data.user._id;
                     sessionStorage.setItem("jwtToken", jwtToken);
-                    sessionStorage.setItem("userId" , userId);
+                    sessionStorage.setItem("userId", userId);
                     sessionStorage.setItem("role", role);
-                    location.href = './dashboard.html';
-                } else if(json.status === 'User already exists') {
+
+                    if (role === 'Farmer') {
+                        location.href = './farmer.html';
+                    } else if (role === 'Industry Buyer') {
+                        location.href = './buyer.html';
+                    } else if (role === 'Transport Facilitator') {
+                        location.href = './Transport.html';
+                    }
+                } else if (json.status === 'User already exists') {
                     alert("user already exists");
                     location.href = './login.html';
                 }
