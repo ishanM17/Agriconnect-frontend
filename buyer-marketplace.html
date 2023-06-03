@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="css/buyer-marketplace.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+
+<script>
+       window.jQuery || document.write('<script src="/path/to/your/jquery"><\/script>');
+</script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="images/color_logo.png" alt="" srcset="" style="width : 120px"></a></div>
+            <ul class="links">
+                <li><a href="hero" class="link">Home</a></li>
+                <li><a href="hero" class="link">Account</a></li>
+                <li><a href="about" class="link">Dashboard</a></li>
+                <li><a href="services" class="link">Subscription</a></li>
+                <li><a href="contact" class="link">Logout</a></li>
+            </ul>
+
+            <!-- <a href="#" class="action_btn">Get Started</a> -->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+
+            </div>
+        </div>
+     </header>
+
+
+    <div class="main">
+
+        <div class="form">
+            <div class="o"><h3>Enter your Address:</h3></div>
+            <div class="s"><input type="text" name="buyer-adderss" placeholder="Address" id="add" class="address"></div>
+            <div class="t"><h4>Do you need transport ?</h4></div>
+            <div class="f"> <input type="checkbox" class="check" style="width: 20px; height: 20px;"></div>
+        </div>
+
+
+        <table class="table">
+            <tr class="table-heading">
+                <th>Name</th>
+                <th>Crop type</th>
+                <th>Date</th>
+                <th>Quantity</th>
+                <th>Location</th>
+                <th>price</th>
+                <th>Accept</th>
+            </tr>
+            <tbody id="mytable">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/buyer-marketplace.js"></script>
+</body>
+</html>
