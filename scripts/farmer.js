@@ -8,11 +8,11 @@ fetch("http://localhost:3000/sale/getFarmerPost/" + sessionStorage.getItem('user
   .then((response) => response.json())
   .then((json) => {
     console.log(json);
-    document.querySelector(".card-detail .Sale").innerHTML = json.price;
-    document.querySelector(".card-detail .Renting").innerHTML = json.quntity;
+    document.querySelector(".Produce").innerHTML = json.quantity + " Kgs";
+    document.querySelector(".Sale").innerHTML = json.price + " ₹";
   });
 
-fetch("", {
+fetch("http://localhost:3000/rent/getBorrowerPost/" + sessionStorage.getItem('userId'), {
   method: "GET",
   headers: {
     "Content-type": "application/json; charset=UTF-8",
@@ -22,6 +22,6 @@ fetch("", {
   .then((response) => response.json())
   .then((json) => {
     console.log(json);
-    document.querySelector(".card-detail .Renting").innerHTML = json.budget;
+    document.querySelector(".Renting").innerHTML = json.budget + " ₹";
     
   });
