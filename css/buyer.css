@@ -333,12 +333,12 @@ img {
 
 .sell{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     position: relative;
     justify-content: center;
     width: 100%;
-    margin-left: 8rem;
+    margin-left: 22rem;
     padding: 20px;
     min-height: 200px ;
 }
