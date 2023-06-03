@@ -399,3 +399,47 @@ table, th, td {
 .table tbody tr:last-of-type{
     border-bottom: 2px solid #013220 ;
 }
+
+
+/*Analisys */
+
+.analysis{
+    display: flex;
+    justify-content: space-between;
+    border : 2px solid black;
+    border-radius: 20px;
+    margin: 24px;
+    width: 100%;
+    padding: 50px;
+    height: 400px;
+}
+
+.analysis-div{
+    background-color: #c5ecc5;
+    width: 45%;
+    height: 250px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.analysis-heading{
+    text-align: center;
+}
+
+.content{
+    padding: 5%;
+    
+}
+
+
+.i{
+    padding: 10px;
+    font-size: 1.2rem;
+    display: inline;
+}
+
+.j{
+    font-size: 1.2rem;
+    display: inline ;
+    padding: 10px;
+}
