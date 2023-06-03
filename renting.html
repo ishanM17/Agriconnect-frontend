@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selling</title>
+    <title>Renting</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/selling.css">
+    <link rel="stylesheet" href="css/renting.css">
 </head>
 <body>
     <div class="main">
         <h1 class="heading">Enter the Following Details</h1>
-            <div class="container" >
+            <div class="container">
                 <div class="sell-div q3">
-                    <h4 class="h4">Type of crop</h4>
-                    <select id="crops" class="inp">
+                    <h4 class="h4">Equipments</h4>
+                    <select id="equipments" class="inp">
                         <option value="not">Select</option>
-                        <option value="rice">Rice</option>
-                        <option value="wheat">Wheat</option>
+                        <option value="tractor">Tractor</option>
+                        <option value="seeding">Seeding</option>
                     </select><br>
-                    <span class="error" id="crop_err"></span>
+                    <span class="error" id="equipment_err"></span>
                 </div>
                 <div class="sell-div q3">
-                    <h4 class="h4">Total Quantity</h4>
-                    <input type="number" min="1" name="quantity" id="quantity" class="inp" placeholder="Quantity"><br>
-                    <span class="error" id="qnt_err"></span>
+                    <h4 class="h4">Date</h4>
+                    <input type="date" min="1" name="Date" id="date" class="inp" placeholder="Quantity"><br>
+                    <span class="error" id="date_err"></span>
                 </div>
                 <div class="sell-div q3">
                     <h4 class="h4">Your Location</h4>
@@ -37,19 +37,20 @@
             </div>
             <div class="con">
                 <div class="sell-div q1">
-                    <h4 class="h4">Desired Price (per Kg)</h4>
-                    <input type="number" min="1" name="price" id="price" class="inp" placeholder="Price"><br>
-                    <span class="error" id="price_err"></span>
+                    <h4 class="h4">Duration <br>(in hrs)</h4>
+                    <input type="number" min="1" name="Duration" id="duration" class="inp" placeholder="Enter duration"><br>
+                    <span class="error" id="duration_err"></span>
                 </div>
                 <div class="sell-div q2">
-                    <h4 class="h4">Date of harvest</h4>
-                    <input type="date" name="doh" id="doh" class="inp"><br>
-                    <span class="error" id="doh_err"></span>
+                    <h4 class="h4">Budget (in Rs)</h4>
+                    <input type="number" name="budget" id="budget" class="inp" placeholder="Enter Amount"><br>
+                    <span class="error" id="budget_err"></span>
                 </div>
             </div>
 
         <button class="butn">Submit</button>
     </div>
-    <script src="scripts/selling.js"></script>
+
+    <script src="scripts/renting.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buyer form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/buyer-form.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">Enter the Following Details</h1>
+            <div class="container">
+                <div class="sell-div q3">
+                    <h4 class="h4">Source</h4>
+                    <input type="text" name="source" id="source" class="inp" placeholder="Source"><br>
+                    <span class="error" id="source_err"></span>
+                </div>
+                <div class="sell-div q3">
+                    <h4 class="h4">Destination</h4>
+                    <input type="text" name="destination" id="destination" class="inp" placeholder="Destintion"><br>
+                    <span class="error" id="destination_err"></span>
+                </div>
+                <div class="sell-div q3">
+                    <h4 class="h4">Fair</h4>
+                    <input type="number" name="fair" id="fair" class="inp" placeholder="Fair"><br>
+                    <span class="error" id="fair_err"></span>
+                </div>
+            </div>
+            <div class="con">
+                <div class="sell-div q1">
+                    <h4 class="h4">Quantity</h4>
+                    <input type="number" min="1" name="quantity" id="quantity" class="inp" placeholder="Quantity"><br>
+                    <span class="error" id="quantity_err"></span>
+                </div>
+                <div class="sell-div q2">
+                    <h4 class="h4">Date</h4>
+                    <input type="date" name="five" id="five" class="inp" placeholder="Enter Amount"><br>
+                    <span class="error" id="five_err"></span>
+                </div>
+            </div>
+
+        <button class="butn">Submit</button>
+    </div>
+
+    <script src="scripts/buyer-form.js"></script>
+</body>
+</html>

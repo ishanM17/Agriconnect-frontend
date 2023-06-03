@@ -15,13 +15,13 @@
 
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#"><img src="/images/logo.png" alt="" srcset=""></a></div>
+            <div class="logo"><a href="#"><img src="images/color_logo.png" alt="" srcset="" style="width : 120px"></a></div>
             <ul class="links">
-                <li><a href="hero">Home</a></li>
-                <li><a href="hero">Account</a></li>
-                <li><a href="about">Dashboard</a></li>
-                <li><a href="services">Support</a></li>
-                <li><a href="contact">Logout</a></li>
+                <li><a href="hero" class="link">Home</a></li>
+                <li><a href="hero" class="link">Account</a></li>
+                <li><a href="about" class="link">Dashboard</a></li>
+                <li><a href="services" class="link">Subscription</a></li>
+                <li><a href="contact" class="link">Logout</a></li>
             </ul>
 
             <!-- <a href="#" class="action_btn">Get Started</a> -->
@@ -42,8 +42,22 @@
      </header>
 
         <div class="card--container">
-            <h3 class="main--title">Today's date</h3>
-            <div class="card--wrapper">              
+            <div class="card--wrapper">
+                <div class="payment--card light-green">
+                    <div class="card--header">
+                        <div class="amount ">
+                            <span class="title">
+                                Payment amount 
+                            </span>
+                            <span class="amount--value">
+                                $500.00
+                            </span>
+                        </div>
+                        <i class="fas fa-dollar-sign icon"></i>
+                    </div>
+                    <span class="card-detail">************</span>
+
+                </div>
 
 
                 <div class="payment--card light-green">
@@ -62,37 +76,7 @@
 
                 </div>
 
-                <div class="payment--card light-green">
-                    <div class="card--header">
-                        <div class="amount ">
-                            <span class="title">
-                                Payment amount 
-                            </span>
-                            <span class="amount--value">
-                                $500.00
-                            </span>
-                        </div>
-                        <i class="fas fa-dollar-sign icon"></i>
-                    </div>
-                    <span class="card-detail">************</span>
 
-                </div>
-
-                <div class="payment--card light-green">
-                    <div class="card--header">
-                        <div class="amount ">
-                            <span class="title">
-                                Payment amount 
-                            </span>
-                            <span class="amount--value">
-                                $500.00
-                            </span>
-                        </div>
-                        <i class="fas fa-dollar-sign icon"></i>
-                    </div>
-                    <span class="card-detail">************</span>
-
-                </div>
 
 
                 <div class="graphBox"> 
@@ -102,9 +86,10 @@
                     
                 </div>
 
-                <h2>Select Services</h2>                
+                
                 
                 <div class="sell">
+                    
                     <div class="payment--card light-green">
                     
                         <div class="card--header">

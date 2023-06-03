@@ -44,11 +44,12 @@ header{
     align-items: center;
     justify-content: space-between;
     color: #013220;
-    background-color: #fff;
+    background-color: #FFFAF0;
     border-radius: 16px;        
-    padding: 4px 51px 2px 6px;
-
-    
+    padding-right: 30px;       
+    padding-top : 60px;
+    padding-bottom: 60px;
+    padding-left: 40px; 
 }
 
 img {
@@ -58,6 +59,10 @@ img {
     margin: 5px 37px;
 }
 
+.link
+{
+    font-size: 1.2rem;
+}
 
 .navbar .links{
     display: flex;
@@ -74,7 +79,7 @@ img {
 
 .action_btn{
     background-color: orange;
-    color: #fff;
+    color: #FFFAF0;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -88,7 +93,7 @@ img {
 
 .action_btn:hover{
     scale:1.05;
-    color: #fff;
+    color: #FFFAF0;
 }
 
 
@@ -157,7 +162,7 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: #fff;
+    background: #FFFAF0;
     border-radius: 10px;
     padding: 10px 2rem;
     margin-bottom: 1rem;
@@ -168,7 +173,7 @@ img {
 
 
     position: relative;
-    background-color: white;
+    background-color: #FFFAF0;
     width: 86%;
     padding: 1rem;
     margin: 14px auto   ;
@@ -190,7 +195,7 @@ img {
 }
 
 .payment--card{
-    background-color: rgb(229, 223, 223);
+    background-color: #c5ecc5;
     border-radius: 10px;
     padding: 1.2rem;
     width: 290px;
@@ -258,7 +263,7 @@ img {
 }
 
 .light-green{
-    background: rgb(235, 254, 235);
+    background: #c5ecc5;
 }
 
 .light-blue{
@@ -343,7 +348,7 @@ table, th, td {
 
 
   .data{
-    background-color: #ffff;
+    background-color: #FFFAF0;
     margin: 2rem 2rem;
     padding: 2rem 2rem;
     height: 200px;
