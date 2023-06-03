@@ -65,7 +65,7 @@
                         </div>
                         <i class="fa-solid fa-leaf fa-beat-fade icon" ></i>
                     </div>
-                    <b><span class="card-detail">85Kgs</span></b>
+                    <b><span class="card-detail Produce">0Kgs</span></b>
 
                 </div>
 
@@ -80,7 +80,7 @@
                         </div>
                         <i class="fa-solid fa-money-bill fa-beat-fade icon"></i>
                     </div>
-                    <b><span class="card-detail">50 Lakhs</span></b>
+                    <b><span class="card-detail Sale">0 ₹</span></b>
 
                 </div>
 
@@ -94,7 +94,7 @@
                         </div>
                         <i class="fa-solid fa-car fa-beat-fade icon"></i>
                     </div>
-                    <b><span class="card-detail">1 Lakh</span></b>
+                    <b><span class="card-detail Renting">0 ₹</span></b>
 
                 </div>
 
@@ -128,7 +128,7 @@
                     <div class="payment--card light-green">
                         
                         <div class="card--header">
-                            <h2 style="font-family: Roboto Serif;">Sell your produce</h2>                            
+                            <h2 style="font-family: Roboto Serif;">For Rent</h2>                            
                             <a href="sell"><i class="fa-solid fa-arrow-right fa-beat-fade icon"></i></a> 
 
                         </div>
@@ -141,31 +141,20 @@
                 </div>   
                 <h2>Lend your resources</h2>             
 
-                    <table style="border:3px solid black ; width:100% ; margin: 1rem auto; padding: 2rem 2rem;text-align: center;" >
-                        <tr style="margin: 2rem 2rem; padding: 2rem 2rem;border: 2px solid;">
-                            <th>Username</th>
-                            <th>Equipment</th>
-                            <th>Date</th>
-                            <th>Duration</th>
-                            <th>Location</th>
-                            <th>Budget</th>
-                            <th>Accept/Reject</th>                       
-                            
-                        </tr>
-
-                        <tr>
-                            <td>Mohan</td>
-                            <td>MohanTractor</td>
-                            <td>12/10/23</td>
-                            <td>1hours</td>
-                            <td>Pune</td>
-                            <td>400</td>
-                            <td>Accept</td>
-                        </tr>
-                        
-
-
-                    </table>
+                <table class="table">
+                    <tr class="table-heading">
+                        <th>Name</th>
+                        <th>Crop type</th>
+                        <th>Date</th>
+                        <th>Quantity</th>
+                        <th>Location</th>
+                        <th>price</th>
+                        <th>Accept</th>
+                    </tr>
+                    <tbody id="mytable">
+        
+                    </tbody>
+                </table>
 
                 
                 
@@ -203,5 +192,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
 <script src="scripts/my_chart.js"></script>
+<script src="scripts/farmer.js"></script>
 </body>
 </html>
