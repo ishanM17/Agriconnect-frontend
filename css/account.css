@@ -346,11 +346,18 @@ table, th, td {
   }
 
 .main{
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-top:50px;
+    margin: 50px auto auto auto;
     background-color: #FFFAF0;
-    width: 87%;
+    width: 60%;
     border-radius: 20px;
     padding: 25px 0px;
     font-family: 'Roboto Serif', serif;
+}
+
+table, th ,td ,th{
+    padding: 20px;
+    border: none;
+    margin: auto;
+    font-size: 1.5rem;
 }
