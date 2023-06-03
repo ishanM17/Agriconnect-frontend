@@ -1,4 +1,4 @@
-fetch("", {
+fetch("http://localhost:3000/sale/getFarmerPost/" + sessionStorage.getItem('userId'), {
   method: "GET",
   headers: {
     "Content-type": "application/json; charset=UTF-8",

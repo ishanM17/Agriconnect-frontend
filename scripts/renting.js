@@ -42,7 +42,7 @@ btn.addEventListener("click", async function (e) {
       "budget": budget
     }
 
-    fetch('http://localhost:3000/sale/createPost', {
+    fetch('http://localhost:3000/rent/createPost', {
       method: 'POST',
       body: JSON.stringify(newPost),
       headers: {
@@ -53,6 +53,7 @@ btn.addEventListener("click", async function (e) {
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
+        location.href = './farmer.html';
       });
   }
 
