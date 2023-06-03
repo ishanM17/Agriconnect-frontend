@@ -49,7 +49,7 @@ header{
     padding-right: 30px;       
     padding-top : 60px;
     padding-bottom: 60px;
-    padding-left: 40px; 
+    padding-left: 40px;
 }
 
 img {
@@ -79,7 +79,7 @@ img {
 
 .action_btn{
     background-color: orange;
-    color: #FFFAF0;
+    color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -93,7 +93,7 @@ img {
 
 .action_btn:hover{
     scale:1.05;
-    color: #FFFAF0;
+    color: #fff;
 }
 
 
@@ -137,6 +137,10 @@ img {
     .dropdown_menu{
         display: block;
     }
+
+    .card--container{
+        z-index: -1;
+    }
     
 }
 
@@ -178,7 +182,6 @@ img {
     padding: 1rem;
     margin: 14px auto   ;
     border-radius: 13px;
-    z-index: -1;
 
 }
 
@@ -195,22 +198,22 @@ img {
 }
 
 .payment--card{
-    background-color: #c5ecc5;
+    background-color: rgb(229, 223, 223);
     border-radius: 10px;
     padding: 1.2rem;
     width: 290px;
     height: 178px;
     display: flex;
     margin-top: 60px;
-    margin-left: 10px;
+    margin-left: 85px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: centre;
     transition: all 0.5s ease-in-out;
 }
 
 .payment--card:hover{
     transform: translateY(-5px);
-}
+}   
 
 .card--header{
     display: flex;

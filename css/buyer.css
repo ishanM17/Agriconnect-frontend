@@ -137,6 +137,10 @@ img {
     .dropdown_menu{
         display: block;
     }
+
+    .card--container{
+        z-index: -1;
+    }
     
 }
 
@@ -178,7 +182,6 @@ img {
     padding: 1rem;
     margin: 14px auto   ;
     border-radius: 13px;
-    z-index: -1;
 
 }
 
