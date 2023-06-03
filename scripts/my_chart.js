@@ -4,7 +4,7 @@ const produce = document.getElementById("Total_Produce");
 
 function updateChart() {
   async function fetchData() {
-    const url = "";
+    const url = "C:\Users\User\Desktop";
     const response = await fetch(url);
     const datapoints = await response.json();
     console.log(datapoints);
