@@ -38,9 +38,9 @@ btn.addEventListener("click", async function (e) {
         console.log(json);
         if (json.message === 'Success') {
           let jwtToken = json.data.user.token;
-          let role = json.data.user.role;
+          let userId = json.data.user._id;
           sessionStorage.setItem("jwtToken", jwtToken);
-          sessionStorage.setItem('userEmail', email);
+          sessionStorage.setItem("userId", userId);
           sessionStorage.setItem("role", role);
           location.href = './dashboard.html';
         } else {
