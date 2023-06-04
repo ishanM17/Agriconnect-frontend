@@ -42,8 +42,6 @@ fetch("http://localhost:3000/sale/getFarmerPost/" + sessionStorage.getItem('user
           responsive: true,
         },
       }); 
-    
-
   });
 
 
